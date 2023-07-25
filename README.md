@@ -8,4 +8,12 @@
 
 ##### Description:
 Workout Home is designed to be an application where you can store different types of excersizes for your workout routine.
-Inclused email and password user authentication
+
+##### Features:
+- Email and password user authentication
+- Create/Delete workout
+- Workout info:
+  - Name of excersize
+  - Load (in lbs)
+  - Reps
+  - timestamp (createdAt)
