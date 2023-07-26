@@ -1,5 +1,5 @@
 {
-	"proxy": "https://workout-home-mern.netlify.app/",
+	"proxy": "https://workout-home.onrender.com/",
 	"name": "frontend",
 	"version": "0.1.0",
 	"private": true,
