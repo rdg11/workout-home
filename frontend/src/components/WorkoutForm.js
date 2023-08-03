@@ -1,3 +1,5 @@
+// require('dotenv').config()
+
 import React, { useState } from 'react'
 import { useWorkoutsContext } from '../hooks/useWorkoutsContext'
 import { useAuthContext } from '../hooks/useAuthContext'
@@ -23,7 +25,7 @@ function WorkoutForm() {
 		const workout = { title, load, reps }
 
 		const response = await fetch(
-			'https://workout-home.onrender.com/api/workouts',
+			'https://workout-home.onrender.com/api/workouts/',
 			{
 				method: 'POST',
 				body: JSON.stringify(workout),

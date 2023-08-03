@@ -1,3 +1,5 @@
+// require('dotenv').config()
+
 import { useEffect } from 'react'
 import { useWorkoutsContext } from '../hooks/useWorkoutsContext'
 import { useAuthContext } from '../hooks/useAuthContext'
@@ -13,7 +15,7 @@ function Home() {
 	useEffect(() => {
 		const fetchWorkouts = async () => {
 			const response = await fetch(
-				'https://workout-home.onrender.com/api/workouts',
+				'https://workout-home.onrender.com/api/workouts/',
 				{
 					headers: {
 						'Authorization': `Bearer ${user.token}`,

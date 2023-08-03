@@ -1,3 +1,5 @@
+// require('dotenv').config()
+
 import React from 'react'
 import { useWorkoutsContext } from '../hooks/useWorkoutsContext'
 import { useAuthContext } from '../hooks/useAuthContext'
@@ -14,7 +16,7 @@ function WorkoutDetails({ workout }) {
 			return
 		}
 		const response = await fetch(
-			'https://workout-home.onrender.com/api/workouts/' + workout._id,
+			process.env.REACT_APP_BACKEND_URL + workout._id,
 			{
 				method: 'DELETE',
 				headers: {
