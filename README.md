@@ -5,7 +5,7 @@
 - Frontend: React
 - Backend: Node.js Express.js
 - DB: MongoDB
-- Hosting: Firebase
+- Hosting: render.com for backend, netlify for frontend
 
 ##### Description:
 
