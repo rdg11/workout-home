@@ -1,5 +1,3 @@
-// require('dotenv').config()
-
 import { useEffect } from 'react'
 import { useWorkoutsContext } from '../hooks/useWorkoutsContext'
 import { useAuthContext } from '../hooks/useAuthContext'
