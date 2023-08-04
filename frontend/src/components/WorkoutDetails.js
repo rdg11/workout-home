@@ -14,7 +14,7 @@ function WorkoutDetails({ workout }) {
 			return
 		}
 		const response = await fetch(
-			process.env.REACT_APP_BACKEND_URL + workout._id,
+			`${process.env.REACT_APP_BACKEND_URL}workouts/${workout._id}`,
 			{
 				method: 'DELETE',
 				headers: {

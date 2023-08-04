@@ -23,7 +23,7 @@ function WorkoutForm() {
 		const workout = { title, load, reps }
 
 		const response = await fetch(
-			'https://workout-home.onrender.com/api/workouts/',
+			`${process.env.REACT_APP_BACKEND_URL}workouts/`,
 			{
 				method: 'POST',
 				body: JSON.stringify(workout),

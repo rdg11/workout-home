@@ -11,7 +11,7 @@ export const useSignup = () => {
 		setError(null)
 
 		const response = await fetch(
-			'https://workout-home.onrender.com/api/user/signup',
+			`${process.env.REACT_APP_BACKEND_URL}user/signup`,
 			{
 				method: 'POST',
 				headers: { 'Content-Type': 'application/json' },

@@ -13,7 +13,7 @@ function Home() {
 	useEffect(() => {
 		const fetchWorkouts = async () => {
 			const response = await fetch(
-				'https://workout-home.onrender.com/api/workouts/',
+				`${process.env.REACT_APP_BACKEND_URL}workouts/`,
 				{
 					headers: {
 						'Authorization': `Bearer ${user.token}`,

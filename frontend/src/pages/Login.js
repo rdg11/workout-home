@@ -5,6 +5,7 @@ function Login() {
 	const [email, setEmail] = useState('')
 	const [password, setPassword] = useState('')
 	const { login, isLoading, error } = useLogin()
+	console.log('backend url: ' + process.env.REACT_APP_BACKEND_URL)
 
 	async function handleSubmit(e) {
 		e.preventDefault()
